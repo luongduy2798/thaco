@@ -1,7 +1,7 @@
 import './i18n.config';
 import { NavigationContainer } from '@react-navigation/native';
-import { navigationRef } from '@src/navigation/RootNavigation';
 import { RootNavigator } from '@src/screens';
+import { navigationRef } from '@src/navigation/RootNavigation';
 
 function App() {
   return (
