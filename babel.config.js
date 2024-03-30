@@ -1,6 +1,15 @@
 module.exports = {
   presets: ['module:@react-native/babel-preset'],
   plugins: [
-    ['nativewind/babel', { tailwindConfig: './tailwind.config.js' }],
+    'nativewind/babel',
+    [
+      'module-resolver',
+      {
+        extensions: ['.ios.js', '.android.js', '.js', '.jsx', '.ts', '.tsx', '.json'],
+        alias: {
+          '@src': './src',
+        },
+      },
+    ],
   ],
 };
